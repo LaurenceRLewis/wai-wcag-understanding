@@ -56,11 +56,11 @@ defaults:
       feedbackmail: ???@w3.org # delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
       layout: standalone_resource
       standalone_resource_nav_links:
-        - name: All Understanding Guidance
+        - name: All Understanding Documents
           ref: /wcag-understanding/all-understanding-guidance
-        - name: About Understanding Guidance
+        - name: About Understanding Documents
           ref: /wcag-understanding/about
-      standalone_resource_doc_name: Understanding Guidance for WCAG 2
+      standalone_resource_doc_name: Understanding Documents for WCAG 2
       footer:
         > # Translate words below, including "Date:" and "Editor:" Translate the Working Group name. Leave the Working Group acronym in English. Do *not* change the dates in the footer below.
         <p><strong>Date:</strong>Updated April 2021.</p>
