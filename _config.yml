@@ -35,7 +35,7 @@ ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 
 remote_theme: w3c/wai-website-theme
 
-collections:
+#collections:
 #  business-case:
 #    area: "Plan & Manage"
 #    name: "Business Case"
@@ -47,16 +47,29 @@ collections:
 #    permalink: /:collection/:path/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
-      layout: "default"
-#  -
-#    scope:
-#      path: "_business-case"
-#    values:
-#      layout: "sidenav"
+      doc-note-type: draft
+      lang: en # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+      last_updated: 2021-@@-@@ # Put the date of this translation YYYY-MM-DD (with month in the middle)
+      feedbackmail: ???@w3.org # delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
+      layout: standalone_resource
+      standalone_resource_nav_links:
+        - name: All Understanding Guidance
+          ref: /wcag-understanding/all-understanding-guidance
+        - name: About Understanding Guidance
+          ref: /wcag-understanding/about
+      standalone_resource_doc_name: Understanding Guidance for WCAG 2
+      footer:
+        > # Translate words below, including "Date:" and "Editor:" Translate the Working Group name. Leave the Working Group acronym in English. Do *not* change the dates in the footer below.
+        <p><strong>Date:</strong>Updated April 2021.</p>
+        <p>The Design Guide content is automatically generated from the W3C note <a href="https://www.w3.org/TR/coga-usable/">Making Content Usable for People with Cognitive and Learning Disabilities</a>. The user interface was developed by Steve Lee and Hidde de Vries, as part of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide project</a>, co-funded by the European Commission.</p>
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: /:path/:basename/
 
 plugins:
   - jekyll-seo-tag
